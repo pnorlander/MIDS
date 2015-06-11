@@ -1,0 +1,211 @@
+student	group
+Derek S.	1B3
+Evyatar	1B1
+Gregory	1B4
+Lacey	1B2
+Louie	1B3
+Robert	1B1
+Saru	1B4
+Sungtai  (Max)	1B2
+Talieh	1B3
+Yiran	1B1
+Derek S.	2G2
+Evyatar	2G2
+Gregory	2G1
+Lacey	2G4
+Louie	2G1
+Robert	2G3
+Saru	2G2
+Sungtai  (Max)	2G1
+Talieh	2G3
+Yiran	2G4
+Derek S.	2BNA
+Evyatar	2BNA
+Gregory	2BNA
+Lacey	2BNA
+Louie	2BNA
+Robert	2BNA
+Saru	2BNA
+Sungtai  (Max)	2BNA
+Talieh	2BNA
+Yiran	2BNA
+Derek S.	3B3
+Evyatar	3B1
+Gregory	3B2
+Lacey	3B3
+Louie	3B1
+Robert	3B2
+Saru	3B3
+Sungtai  (Max)	3B2
+Talieh	3B1
+Yiran	3B2
+Derek S.	4G1
+Evyatar	4G1
+Gregory	4GNA
+Lacey	4G1
+Louie	4G2
+Robert	4G2
+Saru	4G3
+Sungtai  (Max)	4G3
+Talieh	4G3
+Yiran	4G2
+Derek S.	4BNA
+Evyatar	4BNA
+Gregory	4BNA
+Lacey	4BNA
+Louie	4BNA
+Robert	4BNA
+Saru	4BNA
+Sungtai  (Max)	4BNA
+Talieh	4BNA
+Yiran	4BNA
+Derek S.	5B2
+Evyatar	5BNA
+Gregory	5B3
+Lacey	5B2
+Louie	5B3
+Robert	5B2
+Saru	5B3
+Sungtai  (Max)	5B3
+Talieh	5B2
+Yiran	5B2
+Derek S.	6G
+Evyatar	6G
+Gregory	6G
+Lacey	6G
+Louie	6G
+Robert	6G
+Saru	6G
+Sungtai  (Max)	6G
+Talieh	6G
+Yiran	6G
+Derek S.	6B
+Evyatar	6B
+Gregory	6B
+Lacey	6B
+Louie	6B
+Robert	6B
+Saru	6B
+Sungtai  (Max)	6B
+Talieh	6B
+Yiran	6B
+Derek S.	7B
+Evyatar	7B
+Gregory	7B
+Lacey	7B
+Louie	7B
+Robert	7B
+Saru	7B
+Sungtai  (Max)	7B
+Talieh	7B
+Yiran	7B
+Derek S.	8B
+Evyatar	8B
+Gregory	8B
+Lacey	8B
+Louie	8B
+Robert	8B
+Saru	8B
+Sungtai  (Max)	8B
+Talieh	8B
+Yiran	8B
+Derek S.	9G
+Evyatar	9G
+Gregory	9G
+Lacey	9G
+Louie	9G
+Robert	9G
+Saru	9G
+Sungtai  (Max)	9G
+Talieh	9G
+Yiran	9G
+Derek S.	9B
+Evyatar	9B
+Gregory	9B
+Lacey	9B
+Louie	9B
+Robert	9B
+Saru	9B
+Sungtai  (Max)	9B
+Talieh	9B
+Yiran	9B
+Derek S.	10B
+Evyatar	10B
+Gregory	10B
+Lacey	10B
+Louie	10B
+Robert	10B
+Saru	10B
+Sungtai  (Max)	10B
+Talieh	10B
+Yiran	10B
+Derek S.	11B
+Evyatar	11B
+Gregory	11B
+Lacey	11B
+Louie	11B
+Robert	11B
+Saru	11B
+Sungtai  (Max)	11B
+Talieh	11B
+Yiran	11B
+Derek S.	12G
+Evyatar	12G
+Gregory	12G
+Lacey	12G
+Louie	12G
+Robert	12G
+Saru	12G
+Sungtai  (Max)	12G
+Talieh	12G
+Yiran	12G
+Derek S.	12B
+Evyatar	12B
+Gregory	12B
+Lacey	12B
+Louie	12B
+Robert	12B
+Saru	12B
+Sungtai  (Max)	12B
+Talieh	12B
+Yiran	12B
+Derek S.	13B
+Evyatar	13B
+Gregory	13B
+Lacey	13B
+Louie	13B
+Robert	13B
+Saru	13B
+Sungtai  (Max)	13B
+Talieh	13B
+Yiran	13B
+Derek S.	14G
+Evyatar	14G
+Gregory	14G
+Lacey	14G
+Louie	14G
+Robert	14G
+Saru	14G
+Sungtai  (Max)	14G
+Talieh	14G
+Yiran	14G
+Derek S.	14B
+Evyatar	14B
+Gregory	14B
+Lacey	14B
+Louie	14B
+Robert	14B
+Saru	14B
+Sungtai  (Max)	14B
+Talieh	14B
+Yiran	14B
+Derek S.	15G
+Evyatar	15G
+Gregory	15G
+Lacey	15G
+Louie	15G
+Robert	15G
+Saru	15G
+Sungtai  (Max)	15G
+Talieh	15G
+Yiran	15G
