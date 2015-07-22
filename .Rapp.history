@@ -1,0 +1,1125 @@
+plot(t(matrix(rev(c(8.32,8.06,8,8,7.7,7.83,7.56,4.75,6.36)),ncol=3)))
+data.frame(q=c(1,1,1,2,2,2,3,3,3),s=rev(c(8.32,8.06,8,8,7.7,7.83,7.56,4.75,6.36)))
+plot(data.frame(q=c(1,1,1,2,2,2,3,3,3),s=rev(c(8.32,8.06,8,8,7.7,7.83,7.56,4.75,6.36))))
+plot(data.frame(q=c(2,2,2,1,1,1,3,3,3),s=rev(c(8.32,8.06,8,8,7.7,7.83,7.56,4.75,6.36))))
+install.packages(c("RTextTools","tm","SnowballC","topicmodels"),dependencies=T)
+1:3
+writeLines(paste("http://scorecard.cccco.edu/reports/FiveYear/",rep("0",3-nchar(as.character(1:999))),1:9,sep=""),1:9,"_FiveYear.xls",sep=""))
+writeLines(paste("http://scorecard.cccco.edu/reports/FiveYear/",rep("0",3-nchar(as.character(1:999)),1:9,sep=""),1:9,"_FiveYear.xls",sep=""))
+writeLines(paste("http://scorecard.cccco.edu/reports/FiveYear/",rep("0",3-nchar(as.character(1:9)),1:9,sep=""),1:9,"_FiveYear.xls",sep=""))
+rep("0",3-nchar(as.character(1:9))
+nchar(as.character(1:9))
+3-nchar(as.character(1:9))
+rep(0,3-nchar(as.character(1:9)))
+mapply(rep,0,3-nchar(as.character(1:9)))
+sapply(rep,0,3-nchar(as.character(1:9)))
+?rep
+rep(1:2,1)
+rep(1:2,2)
+nchar(2)
+nchar(22)
+nchar(1:9)
+sapply(3-nchar(1:9),rep,0)
+mapply(rep,0,3-nchar(1:9))
+mapply(rep,0,3-nchar(1:9),SIMPLIFY=F)
+mapply(paste,"bye",mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),"hi",sep="")
+paste("bye",sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste0),"hi",sep="")
+3-nchar(1:9)
+paste("bye",sapply(mapply(rep,0,times=3-nchar(1:9),SIMPLIFY=F),paste0),"hi",sep="")
+sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste)
+sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste,sep="")
+sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste,collapse="")
+paste0("hi",sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste,collapse=""),"bye)"
+paste0("hi",sapply(mapply(rep,0,3-nchar(1:9),SIMPLIFY=F),paste,collapse=""),"bye")
+head(paste0("http://scorecard.cccco.edu/reports/FiveYear/",sapply(mapply(rep,0,3-nchar(1:999),SIMPLIFY=F),paste,collapse=""),1:999,"_FiveYear.xls"))
+head(paste0("http://scorecard.cccco.edu/reports/FiveYear/",sapply(mapply(rep,0,3-nchar(0:999),SIMPLIFY=F),paste,collapse=""),0:999,"_FiveYear.xls"))
+writeLines(paste0("http://scorecard.cccco.edu/reports/FiveYear/",sapply(mapply(rep,0,3-nchar(0:999),SIMPLIFY=F),paste,collapse=""),0:999,"_FiveYear.xls"),"scorecards.txt")
+d1<-sample(1:6,1000)
+d1<-sample(1:6,1000,replace=T)
+d2<-sample(2:7,1000,replace=T)
+plot(density(d1))
+?density
+plot(density(d1,adjust=2))
+plot(density(d1,adjust=3))
+plot(density(d1,adjust=4))
+hist(d1)
+mean(d1)
+mean(d2)
+install.packages("tm",dependencies=T)
+help(package="tm")
+mm<-replicate(1000,sample(1:4,1)+1)
+quantile(mm)
+mm<-replicate(1000,replicate(4,sample(1:4,1)))
+dim(mm)
+mm<-apply(replicate(1000,replicate(4,sample(1:4,1))),2,sum)
+length(mm)
+co<-apply(replicate(1000,replicate(2,sample(1:8,1))),2,sum)
+mm<-apply(replicate(1000,replicate(4,sample(1:4,1)+1)),2,sum)
+summary(mm)
+summary(co)
+summary(mm)-summary(co)
+d<-replicate(1000,replicate(sample(1:6,18,T)))
+d<-replicate(1000,replicate(sample(1:6,18,replace=T)))
+d<-replicate(1000,sample(1:6,18,replace=T))
+d<-replicate(1000,sum(sample(1:6,18,replace=T)))
+d<-replicate(10000,sum(sample(1:6,18,replace=T)))
+summary(d)
+plot(density(d))
+mean(d>=88)
+sum(6*18)
+library(stem)
+help(package=stm)
+class(letters)
+list(letters)
+list(letters,LETTERS)
+list(letters,LETTERS)[1]
+class(list(letters,LETTERS)[1])
+class(list(letters,LETTERS)[[1]])
+library(tm)
+?tm_map
+?readLines
+example(scan)
+library(stm)
+?strsplit
+?regex
+Sys.getlocale()
+?removeWords
+?table
+?rbind
+?stm
+4000*72
+7000*72
+4000*120
+?intersect
+?"::"
+examples("::")
+example("::")
+base::c
+cat("\014")
+cat("\f")
+cd<-readLines('/Users/bambrose/Dropbox/2014-2015/Sprints/2/Terminal grep community detection.txt')#
+cd<-cd[cd!='']#
+#
+library(stringdist)#
+system.time(sd<-stringdistmatrix(cd,cd,method='cosine'))
+parallel::detectCores()
+detectCores()
+?stringdist
+getOption("sd_num_thread")
+.libPaths()
+if(rep(c(T,F),6)) {"bunny"} else {"rabbit"}
+hot<-readLines('view-source:https://learn.datascience.berkeley.edu/course/view.php?id=46&group=108&page=coursework')
+hot<-readLines('https://learn.datascience.berkeley.edu/course/view.php?id=46&group=108&page=coursework')
+h<-readLines('http://www.sacbee.com/site-services/databases/state-pay/article2642161.html#req=employee%2Fsearch%2Fname%3D%2Fyear%3D2013%2Fdepartment%3DUC%2520Berkeley')
+length(h)
+h
+cat(rep(2:11,21),sep='\n')
+cat(rep(2:11,21),sep='\n=')
+r:u
+letters
+tail(LETTERS,9)
+tail(LETTERS,9),head(LETTERS,12)
+c(tail(LETTERS,9),head(LETTERS,12))
+cat(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")))
+paste(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),"1",sep="")
+sapply(paste(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),"1",sep=""),function(x) paste("=",x,"&",x,2:11,sep=""))
+sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep=""),function(x) paste("=",x,"&",x,2:11,sep=""))
+)
+c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep=""))
+sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("=",x,"1&",x,2:11,sep=""))
+sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("=",x,"1&",x,2:11,sep=""),simplify=F)
+do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("=",x,"1&",x,2:11,sep=""),simplify=F))
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("=",x,"1&",x,2:11,sep=""),simplify=F)),sep='\n')
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&",x,2:11,sep=""),simplify=F)),sep='\n')
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,2:11,sep=""),simplify=F)),sep='\n')
+cat(rep(1:11,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')
+cat(rep(1:1,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')
+cat(rep(1:10,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')
+cat(rep(2:11,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(12:21,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,12:21,sep=""),simplify=F)),sep='\n')
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')
+function() {#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(2:11,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,2:11,sep=""),simplify=F)),sep='\n')#
+#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(12:21,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,12:21,sep=""),simplify=F)),sep='\n')#
+#
+}
+function() {#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(2:11,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,2:11,sep=""),simplify=F)),sep='\n')#
+#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(12:21,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,12:21,sep=""),simplify=F)),sep='\n')#
+#
+}()
+make()
+make<-function() {#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(2:11,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,2:11,sep=""),simplify=F)),sep='\n')#
+#
+cat('=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(rep(12:21,21),sep='\n=\'W201-3 ROSTER Summer 2015.csv\'!E')#
+cat(do.call(c,sapply(c(tail(LETTERS,9),paste("A",head(LETTERS,12),sep="")),function(x) paste("='W201-3 ROSTER Summer 2015.csv'!",x,"1&'W201-3 ROSTER Summer 2015.csv'!",x,12:21,sep=""),simplify=F)),sep='\n')#
+#
+}#
+#
+make()
+el3<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t')
+?read.table
+el3<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t',header=t)
+el3<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t',header=T)
+el3<-el3[grepl('[A-Z]$',el3$group),]
+el3<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t',header=T)#
+el3<-el3[!grepl('[A-Z]$',el3$group),]
+el4<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt',sep='\t',header=T)
+el4<-el4[!grepl('[A-Z]$',el4$group),]
+el4
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')
+ls()
+getwd()
+mel3<-bel2mel.f(el3)
+library(data.table)#
+el3<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+el4<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt',sep='\t',header=T)#
+el4<-data.table(el4[!grepl('[A-Z]$',el4$group),])#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+mel3<-bel2mel.f(el3)
+mel3<-bel2mel.f(el3[,2:1])
+el3[,2:1]
+mel3<-bel2mel.f(el3[,list(2:1)])
+mel3<-bel2mel.f(el3[,list(group,student)])
+el3
+mel3<-bel2mel.f(el3[,1:2,with=F])
+mel3<-bel2mel.f(el3[,2:1,with=F])
+library(igraph)
+??edgelist
+net3<-graph.edgelist(mel3[,list(cr1,cr2)])
+mel3
+net3<-graph.edgelist(mel3[,cr1,cr2])
+mel3[,cr1,cr2]
+mel3$utel[,list(cr1,cr2)]
+net3<-graph.edgelist(mel3$utel[,list(cr1,cr2)])
+net3<-graph.edgelist(as.character(mel3$utel[,list(cr1,cr2)]))
+as.character(mel3$utel[,list(cr1,cr2)])
+as.matrx(mel3$utel[,list(cr1,cr2)])
+as.matrix(mel3$utel[,list(cr1,cr2)])
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]))
+net3
+mel3$utel[,-ew]
+E(net3)$weight<-mel3$utel[,-ew]
+plot(net3,weights=E(net3)$weight)
+layout.fruchterman.reingold(net3,weights=E(net3)$weight)
+l<-layout.fruchterman.reingold(net3,weights=E(net3)$weight)
+?spinglass.community
+?layout.fruchterman.reingold
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]))#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=E(net3)$weight)#
+plot.communities(#
+spinglass.community(net3,spins=3,implementation='neg')#
+,net3#
+,layout=l#
+)
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)
+which.max(sapply(modularity),sg)
+sg
+which.max(sapply(sg,modularity))
+sg[[which.max(sapply(sg,modularity))]]
+max(sapply(sg,modularity,weights=E(net3)$weight))
+max(sapply(sg,modularity))
+?modularity
+max(sapply(sg,modularity,weights=-E(net3)$weight))
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]
+combn(1:3,3)
+?combn
+expand.grid( rep( list( 0:4), 2))
+rep( list( 0:4), 2)
+rep( list( 0:4), 3)
+expand.grid( rep( list( 0:4), 3))
+dplot(net3)
+plot(net3)
+sg[[which.min(sapply(sg,modularity,weights=E(net3)$weight))]]
+plot(net3,layout=layout.fruchterman.reingold(net3,weights=E(net3)$weight))
+plot(net3,layout=layout.fruchterman.reingold(net3,weights=-E(net3)$weight))
+summary(net3)
+??directed
+?graph.edgelist
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=E(net3)$weight)#
+plot.communities(#
+spinglass.community(net3,spins=3,implementation='neg')#
+,net3#
+,layout=l#
+)#
+#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+plot.communities(#
+spinglass.community(net3,spins=3,implementation='neg')#
+,net3#
+,layout=l#
+)
+plot.communities(#
+sg[[which.min(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+)
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+)
+pdf('~/Dropbox/Summer 2015/MIDS/RDADA/6/groups.pdf',h=4,w=4)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+)#
+dev.off()
+?plot
+??igraph.plotting
+?igraph.plotting
+-E(net3)$weight
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)
+pdf('~/Dropbox/Summer 2015/MIDS/RDADA/6/groups.pdf',h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()
+pdf('~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf',h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()
+dif.groups<-function(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+){#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+plot.communities(#
+spinglass.community(net3,spins=3,implementation='neg')#
+,net3#
+,layout=l#
+)#
+#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+}#
+#
+dif.groups()#
+dig.groups(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section4/groups.pdf'#
+)
+graphics.off()
+dif.groups<-function(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+){#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+plot.communities(#
+spinglass.community(net3,spins=3,implementation='neg')#
+,net3#
+,layout=l#
+)#
+#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+){#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(in='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(in,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()
+dig.groups(#
+in='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section4/groups.pdf'#
+)
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section4/groups.pdf'#
+)
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.pdf'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+pdf(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.pdf'#
+)
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.pdf'#
+)
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+png(out,h=5,w=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.png'#
+)
+?png
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+png(out,h=5,w=5,units='in')#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.png'#
+)
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+png(out,h=3,w=3,units='in',res=.72)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.png'#
+)
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+png(out,h=3,w=3,units='in',res=72)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.png'#
+)
+dif.groups<-function(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+png(out,h=3,w=3,units='in',res=72)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups()#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.png'#
+)
+dif.groups<-function(el,out)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+svg(out,height=3,width=3)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.png'#
+)#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.svg'#
+)
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.svg'#
+)
+dif.groups<-function(el,out)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+svg(out) #
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.svg'#
+)#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.svg'#
+)
+dif.groups<-function(el,out)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+svg(out,height=3,width=3)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.svg'#
+)#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.svg'#
+)
+?svg
+dif.groups<-function(el,out)#
+{#
+source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')#
+require(data.table)#
+require(igraph)#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+pdf(out,height=3,width=3)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+#
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups.svg'#
+)#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups.svg'#
+)
+dif.groups(el='~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups3.pdf'#
+)#
+dif.groups(#
+el='~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt'#
+,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups4.pdf'#
+)
+dif.groups<-function(el,out)#
+{#
+require(data.table)#
+require(igraph)#
+#
+bel2mel.f<-function(#
+	db2bel=NULL#
+	,type=c("utel","crel")#
+)#
+{#
+	require(data.table)#
+	if(ncol(db2bel)>2) stop('db2bel must be a bimodal edgelist as a two column data.table. Selection on pendants, etc. should be made prior to passing to bel2mel.f.')#
+#
+	setnames(db2bel,c('ut','cr'))#
+	db2bel[,ut:=as.character(ut)]#
+	db2bel[,cr:=as.character(cr)]#
+#
+	bel2mel<-list()#
+#
+	if('utel'%in%type){#
+		setkey(db2bel,ut,cr)#
+		utd<-db2bel[,.N,by=ut]#
+		setkey(utd,N,ut)#
+		utiso<-utd[list(1),ut]#
+		bel2mel$utel<-db2bel[!list(utiso),list(cr=combn(cr,m=2,FUN=sort,simplify=F)),by=ut]#
+		bel2mel$utel[,`:=`(cr1=sapply(cr,function(x) x[1]),cr2=sapply(cr,function(x) x[2]))]#
+		bel2mel$utel[,cr:=NULL]#
+		bel2mel$utel<-bel2mel$utel[,list(ew=.N,ut=list(ut)),keyby=c('cr1','cr2')]#
+	}#
+	bel2mel#
+}#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+pdf(out,height=3,width=3)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+setwd('/Users/bambrose/Dropbox/GitHub/MIDS')#
+dif.groups(el='s3el.txt'#
+,out='groups3.pdf'#
+)#
+dif.groups(#
+el='s4el.txt'#
+,out='groups4.pdf'#
+)
+dif.groups<-function(el,out)#
+{#
+require(data.table)#
+require(igraph)#
+#
+bel2mel.f<-function(#
+	db2bel=NULL#
+	,type=c("utel","crel")#
+)#
+{#
+	require(data.table)#
+	if(ncol(db2bel)>2) stop('db2bel must be a bimodal edgelist as a two column data.table. Selection on pendants, etc. should be made prior to passing to bel2mel.f.')#
+#
+	setnames(db2bel,c('ut','cr'))#
+	db2bel[,ut:=as.character(ut)]#
+	db2bel[,cr:=as.character(cr)]#
+#
+	bel2mel<-list()#
+#
+	if('utel'%in%type){#
+		setkey(db2bel,ut,cr)#
+		utd<-db2bel[,.N,by=ut]#
+		setkey(utd,N,ut)#
+		utiso<-utd[list(1),ut]#
+		bel2mel$utel<-db2bel[!list(utiso),list(cr=combn(cr,m=2,FUN=sort,simplify=F)),by=ut]#
+		bel2mel$utel[,`:=`(cr1=sapply(cr,function(x) x[1]),cr2=sapply(cr,function(x) x[2]))]#
+		bel2mel$utel[,cr:=NULL]#
+		bel2mel$utel<-bel2mel$utel[,list(ew=.N,ut=list(ut)),keyby=c('cr1','cr2')]#
+	}#
+	bel2mel#
+}#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+pdf(out,height=5,width=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+dev.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+setwd('/Users/bambrose/Dropbox/GitHub/MIDS')#
+dif.groups(el='s3el.txt'#
+,out='groups3.pdf'#
+)#
+dif.groups(#
+el='s4el.txt'#
+,out='groups4.pdf'#
+)
+setwd('/Users/bambrose/Dropbox/GitHub/MIDS')
+dif.groups<-function(el,out)#
+{#
+require(data.table)#
+require(igraph)#
+#
+bel2mel.f<-function(#
+	db2bel=NULL#
+	,type=c("utel","crel")#
+)#
+{#
+	require(data.table)#
+	if(ncol(db2bel)>2) stop('db2bel must be a bimodal edgelist as a two column data.table. Selection on pendants, etc. should be made prior to passing to bel2mel.f.')#
+#
+	setnames(db2bel,c('ut','cr'))#
+	db2bel[,ut:=as.character(ut)]#
+	db2bel[,cr:=as.character(cr)]#
+#
+	bel2mel<-list()#
+#
+	if('utel'%in%type){#
+		setkey(db2bel,ut,cr)#
+		utd<-db2bel[,.N,by=ut]#
+		setkey(utd,N,ut)#
+		utiso<-utd[list(1),ut]#
+		bel2mel$utel<-db2bel[!list(utiso),list(cr=combn(cr,m=2,FUN=sort,simplify=F)),by=ut]#
+		bel2mel$utel[,`:=`(cr1=sapply(cr,function(x) x[1]),cr2=sapply(cr,function(x) x[2]))]#
+		bel2mel$utel[,cr:=NULL]#
+		bel2mel$utel<-bel2mel$utel[,list(ew=.N,ut=list(ut)),keyby=c('cr1','cr2')]#
+	}#
+	bel2mel#
+}#
+#
+el3<-read.table(el,sep='\t',header=T)#
+el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])#
+#
+mel3<-bel2mel.f(el3[,2:1,with=F])#
+#
+net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)#
+E(net3)$weight<-mel3$utel[,-ew]#
+l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)#
+sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)#
+#
+par(mai=c(0.1,0.1,0.1,0.1))#
+pdf(out,height=5,width=5)#
+plot.communities(#
+sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+,net3#
+,layout=l#
+,edge.width=-E(net3)$weight#
+)#
+graphics.off()#
+ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]#
+ret#
+}#
+setwd('/Users/bambrose/Dropbox/GitHub/MIDS')#
+dif.groups(el='s3el.txt'#
+,out='groups3.pdf'#
+)#
+dif.groups(#
+el='s4el.txt'#
+,out='groups4.pdf'#
+)
+factor

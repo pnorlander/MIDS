@@ -1,65 +1,108 @@
-dif.groups<-function(el,out)
+dif.groups<-function(el,out,mx.grp,type=c('same','different'))
 {
-require(data.table)
-require(igraph)
-
-bel2mel.f<-function(
-	db2bel=NULL
-	,type=c("utel","crel")
-)
-{
+	source('~/Dropbox/GitHub/knowledge-survival/dissertation_source.R')
 	require(data.table)
-	if(ncol(db2bel)>2) stop('db2bel must be a bimodal edgelist as a two column data.table. Selection on pendants, etc. should be made prior to passing to bel2mel.f.')
+	require(igraph)
 
-	setnames(db2bel,c('ut','cr'))
-	db2bel[,ut:=as.character(ut)]
-	db2bel[,cr:=as.character(cr)]
+	mel<-bel2mel.f(el)
 
-	bel2mel<-list()
+	net<-graph.edgelist(as.matrix(mel$utel[,list(cr1,cr2)]),directed=F)
+	E(net)$weight<-mel$utel[,ew]*ifelse(type[1]=='different',-1,1)
+	l<-layout.fruchterman.reingold(net,weights=abs(E(net)$weight))
+	sg<-replicate(100,spinglass.community(net,spins=mx.grp,implementation='neg'),simplify=F)
 
-	if('utel'%in%type){
-		setkey(db2bel,ut,cr)
-		utd<-db2bel[,.N,by=ut]
-		setkey(utd,N,ut)
-		utiso<-utd[list(1),ut]
-		bel2mel$utel<-db2bel[!list(utiso),list(cr=combn(cr,m=2,FUN=sort,simplify=F)),by=ut]
-		bel2mel$utel[,`:=`(cr1=sapply(cr,function(x) x[1]),cr2=sapply(cr,function(x) x[2]))]
-		bel2mel$utel[,cr:=NULL]
-		bel2mel$utel<-bel2mel$utel[,list(ew=.N,ut=list(ut)),keyby=c('cr1','cr2')]
-	}
-	bel2mel
+	par(mai=c(0.1,0.1,0.1,0.1))
+	pdf(out,height=3,width=3)
+	plot.communities(
+		sg[[which.max(sapply(sg,modularity,weights=E(net)$weight))]]
+		,net
+		,layout=l
+		,edge.width=-E(net)$weight
+	)
+	dev.off()
+	if(type[1]=='same') ret<-sg[[which.max(sapply(sg,modularity,weights=E(net)$weight))]]
+	if(type[1]=='different') ret<-sg[[which.min(sapply(sg,modularity,weights=E(net)$weight))]]
+	ret
 }
 
-el3<-read.table(el,sep='\t',header=T)
-el3<-data.table(el3[!grepl('[A-Z]$',el3$group),])
+if(F){
+	el<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s3el.txt',sep='\t',header=T)
+	el<-data.table(el[!grepl('[A-Z]$',el$group),])
+	el<-el[,2:1,with=F]
 
-mel3<-bel2mel.f(el3[,2:1,with=F])
+	dif.groups(el=el
+						 ,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 3/groups3.pdf'
+						 ,mx.grp=3
+						 ,type='different'
+	)
 
-net3<-graph.edgelist(as.matrix(mel3$utel[,list(cr1,cr2)]),directed=F)
-E(net3)$weight<-mel3$utel[,-ew]
-l<-layout.fruchterman.reingold(net3,weights=-E(net3)$weight)
-sg<-replicate(100,spinglass.community(net3,spins=3,implementation='neg'),simplify=F)
+	el<-read.table('~/Dropbox/Summer 2015/MIDS/RDADA/s4el.txt',sep='\t',header=T)
+	el<-data.table(el[!grepl('[A-Z]$',el$group),])
+	el<-el[,2:1,with=F]
 
-par(mai=c(0.1,0.1,0.1,0.1))
-pdf(out,height=5,width=5)
-plot.communities(
-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]
-,net3
-,layout=l
-,edge.width=-E(net3)$weight
-)
-graphics.off()
-ret<-sg[[which.max(sapply(sg,modularity,weights=E(net3)$weight))]]
-ret
+	dif.groups(
+		el=el
+		,out='~/Dropbox/Summer 2015/MIDS/RDADA/6/Section 4/groups4.pdf'
+		,mx.grp=3
+		,type='different'
+	)
 }
 
-setwd('path/to/this/repo/folder/difgroups')
-
-dif.groups(el='s3el.txt'
-,out='groups3.pdf'
+library(data.table)
+el<-read.table('/Users/bambrose/Dropbox/Summer 2015/SOC1Online/admin/Soc1RosterSummer2015.tab.txt',sep='\t',header=T)
+el<-rbindlist(
+	list(data.table(el$Major,el$E.mail,el$Section)
+			 ,data.table(el$Classification,el$E.mail,el$Section))
+	,use.names=F,fill=F
 )
+setkey(el,V3)
 
-dif.groups(
-el='s4el.txt'
-,out='groups4.pdf'
-)
+A<-try(dif.groups(
+	el=el['A',-3,with=F]
+	,out='~/Dropbox/Summer 2015/SOC1Online/3/A-dif-group.pdf'
+	,mx.grp=6
+	,type='different'
+))
+B<-try(dif.groups(
+	el=el['B',-3,with=F]
+	,out='~/Dropbox/Summer 2015/SOC1Online/3/B-dif-group.pdf'
+	,mx.grp=6
+	,type='different'
+))
+C<-try(dif.groups(
+	el=el['C',-3,with=F]
+	,out='~/Dropbox/Summer 2015/SOC1Online/3/C-dif-group.pdf'
+	,mx.grp=6
+	,type='different'
+))
+if(F) {write.table(
+	rbind(
+		membership(A)[order(names(membership(A)))]
+		,membership(B)[order(names(membership(B)))]
+		,membership(C)[order(names(membership(C)))]
+	)
+)}
+
+library(igraph)
+els<-lapply(decompose.graph(graph.edgelist(as.matrix(el[,-3,with=F]),directed=T)),get.edgelist)
+if(F){
+	ABC<-list()
+	for(i in 1:length(els)){
+		ABC[[i]]<-try(dif.groups(
+			el=data.table(els[[i]])
+			,out=paste('~/Dropbox/Summer 2015/SOC1Online/3/ABC',i,'-dif-group.pdf',sep='')
+			,mx.grp=23
+			,type='different'
+		))}
+}
+res<-list()
+ABC<-list(A,B,C)
+for(i in 1:length(ABC)){
+	res[[i]]<-cbind(names(membership(ABC[[i]])),paste(i,'-',sapply(2-nchar(membership(ABC[[i]])),function(x) paste0(rep('0',times=x),collapse='')),membership(ABC[[i]]),sep=''))
+}
+res<-do.call(rbind,res)
+try(res<-rbind(res,cbind(unique(els[[3]][,2]),'')))
+res<-res[order(res[,1]),]
+apply(res,1,function(x) {cat(x,sep='\t');cat('\n')})
+
+apply(matrix(sample(c('Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig')),ncol=2),1,function(x) {cat(x,sep='\t');cat('\n')})
